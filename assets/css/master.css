@@ -1,0 +1,348 @@
+@charset "UTF-8";
+* {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	box-sizing: border-box;
+}
+*:after, *:before {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	font-size: 16px;
+}
+html, body {
+	height: 100%;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	transition: all 450ms ease-in-out 0s;
+	-webkit-transition: all 450ms ease-in-out 0s;
+	-moz-transition: all 450ms ease-in-out 0s;
+}
+a:hover {
+	outline: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+	display: block;
+}
+/*clearfix to clear float */
+.clearfix:before, .clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+input, input:focus, input::-moz-focus-inner {
+	outline: none;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+	border: none;
+	cursor: pointer;
+}
+textarea {
+	resize: none;
+	outline: none;
+	font-family: inherit;
+}
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
+/*navbar*/
+.navbar {
+    background: #000000;
+    padding: 5px 0;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+.navbar-header .navbar-brand {
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+.navbar .navbar-right ul li a {
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav li a.active {
+    color: #70B9B0 !important;
+}
+
+.navbar .navbar-right ul li a:hover {
+    color: #70B9B0;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+/*intro-section*/
+.intro-section {
+    background: url(../images/header-bg.jpg) no-repeat bottom right;
+    background-size: auto;
+    background-size: cover;
+    color: #cfcfcf;
+    position: relative;
+    height: 100%;
+}
+
+.intro-section-box {
+    position: relative;
+    padding: 250px 0 170px 0;
+}
+
+.intro-section-box h1 {
+    font-size: 50px;
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.intro-section-box p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 200;
+    margin: 0 0 80px 0;
+}
+
+.intro-section-box .btn {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    margin: 0 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+.intro-section-box .btn:hover {
+    background-color: #fff;
+    color: #0dad8d;
+    border-color: #fff;
+}
+
+/*section common class*/
+.section-header {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.section-header h2 {
+    line-height: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 60px 0;
+    color: #555;
+    position: relative;
+}
+
+.section-header h2:after {
+    background: #0dad8d;
+    bottom: -28px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -30px;
+    position: absolute;
+    width: 60px;
+}
+
+.section-header p {
+    margin: 20px 0 30px 0;
+}
+
+/*Services section*/
+.service-section {
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+.service-section .service-box {
+    text-align: center;
+}
+
+.service-section .service-box i.fa {
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    color: #0dbf9b;
+}
+
+.service-section .service-box h3 {
+    font-size: 20px;
+    color: #666;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+/*contact-us section*/
+.contact-us {
+    padding: 100px 0 100px 0;
+    background: #f7f7f7;
+}
+
+.contact-us p {
+    font-size: 17px;
+}
+
+.contact-us h3 {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+}
+
+.address-box {
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+
+.address-box i.fa {
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    color: #0bbf9a;
+}
+
+.contact-us form {
+    padding: 30px 0;
+}
+
+.contact-us .btn {
+    color: #0bbf9a;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    border: 2px solid rgb(11, 191, 154);
+    margin: 20px 0 0 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: all 0.5s;
+    border-radius: 4px;
+}
+
+.contact-us .btn:hover {
+    background: #0dbf9b;
+    border: 2px solid #0dbf9b;
+    color: #fff;
+}
+
+.contact-us h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contact-us .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+/*Social-media*/
+.social-media {
+    padding: 30px 0;
+    background-color: #0dbf9b;
+    text-align: center;
+    width: 100%;
+}
+
+.social-media ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    vertical-align: top;
+}
+
+.social-media ul li i.fa {
+    font-size: 24px;
+    padding: 4px 5px;
+    color: #fff;
+    transition: all 0.5s;
+}
+/*footer*/
+.main-footer {
+    background-color: #222222;
+    color: #777;
+    padding: 15px 0 10px 0;
+    text-align: center;
+}
+
+.main-footer p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+/*Responsive CSS*/
+@media (max-width: 767px) {
+    .intro-section-box h1 {
+        font-size: 40px;
+    }
+    .service-section,
+    .contact-us {
+        padding: 40px 0;
+    }
+    .service-section .service-box {
+        margin-bottom: 40px;
+    }
+    .social-media ul li {
+        margin: 0 7px;
+    }
+    .section-header h2 {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
